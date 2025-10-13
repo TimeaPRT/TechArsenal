@@ -1,14 +1,10 @@
 # Node modules
 node_modules/
+frontend/node_modules/
 
 # Next.js build
 .next/
 out/
-dist/
 
-# Logs
-*.log
-
-# OS files
-.DS_Store
-Thumbs.db
+# Env files
+.env*
