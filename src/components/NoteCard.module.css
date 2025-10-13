@@ -1,0 +1,33 @@
+
+.noteCard {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+}
+
+.noteCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.noteTitle {
+    font-size: 1.25em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+.noteContent {
+    font-size: 1em;
+    color: #555;
+    white-space: pre-wrap; 
+    flex-grow: 1; 
+}
