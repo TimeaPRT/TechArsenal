@@ -1,0 +1,7 @@
+// src/types/task.ts
+export interface Task {
+  id: number;
+  text: string;
+  completed: boolean;
+  createdAt: string;
+}
