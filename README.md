@@ -11,7 +11,7 @@
 ---
 
 ## 🧠 About Me
-I’m a creative and detail-oriented web developer focused on crafting smooth user experiences, efficient backend logic, and clean, maintainable code.  
+Creative and detail-oriented developer focused on crafting smooth user experiences, efficient backend logic, and clean, maintainable code.  
 I enjoy transforming ideas into elegant digital products using modern web technologies.
 
 ---
@@ -20,12 +20,11 @@ I enjoy transforming ideas into elegant digital products using modern web techno
 
 ### 🎨 **Frontend Development**
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vite,tailwind" />
+  <img src="https://skillicons.dev/icons?i=html,js,ts,react,nextjs,vite" />
 </p>
 
 - **Languages:**  
   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
   ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
   ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 
@@ -35,9 +34,11 @@ I enjoy transforming ideas into elegant digital products using modern web techno
   ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
 
 - **Styling:**  
+  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
   ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+  ![ShadCN UI](https://img.shields.io/badge/ShadCN_UI-000000?style=flat&logo=react&logoColor=white)
 
-- **Best Practices:** Component-based architecture, responsive design, accessibility-focused UI
+- **Best Practices:** Component-based architecture, responsive design, accessibility-first UI
 
 ---
 
@@ -46,13 +47,8 @@ I enjoy transforming ideas into elegant digital products using modern web techno
   <img src="https://skillicons.dev/icons?i=nodejs,express" />
 </p>
 
-- **Languages:**  
-  ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
-
-- **Frameworks:**  
-  ![Express](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
-
-- **Features:** RESTful API development, server-side logic, authentication & authorization
+- **Node.js** & **Express.js** – RESTful APIs, server-side logic, authentication & authorization  
+- Secure and scalable backend with clean code practices
 
 ---
 
@@ -72,22 +68,30 @@ I enjoy transforming ideas into elegant digital products using modern web techno
 </p>
 
 - **Figma:** Wireframing, prototyping, interactive mockups, design systems  
-- **Canva:** Quick visual assets for marketing and social content  
-- **ShadCN UI:** Consistent, accessible component library for React apps  
-- **Focus:** User-centered design, mobile responsiveness, cross-browser compatibility
+- **Canva:** Visual assets for marketing and social content  
+- **Focus:** User-centered design, responsiveness, and accessibility
 
 ---
 
-### 🧩 **Version Control & Collaboration**
+### 📋 **Project Management & Documentation**
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=git,github" />  
-  <img src="https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira&logoColor=white" />  
+  <img src="https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira&logoColor=white" />
+  <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white" />
   <img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=slack&logoColor=white" />
 </p>
 
-- **Git & GitHub:** Branching, pull requests, code reviews  
-- **Jira:** Task tracking and sprint planning  
-- **Slack:** Team communication and workflow integration
+- **Jira:** Task tracking & sprint planning  
+- **Notion:** Project documentation & workflow organization  
+- **Slack:** Team communication and workflow integration  
+
+---
+
+### 🧩 **Version Control**
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=git,github" />
+</p>
+
+- **Git & GitHub:** Branching, pull requests, code reviews, CI/CD collaboration
 
 ---
 
@@ -98,7 +102,7 @@ I enjoy transforming ideas into elegant digital products using modern web techno
 
 - **Vite:** Fast build tool for modern web apps  
 - **npm / yarn:** Package management  
-- **VS Code:** Extensions for linting, formatting, and productivity
+- **VS Code:** Extensions for linting, formatting, and productivity  
 
 ---
 
@@ -106,7 +110,7 @@ I enjoy transforming ideas into elegant digital products using modern web techno
 - Building **clean, performant, and maintainable** web applications  
 - Designing **intuitive, responsive** interfaces  
 - Writing **secure, scalable** backend services  
-- Collaborating in **agile teams** with clear communication and version control
+- Collaborating in **agile teams** with effective communication
 
 ---
 
