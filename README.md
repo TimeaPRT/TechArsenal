@@ -20,7 +20,7 @@ Users can type a message in the input, send it to the server route, and see a re
 - **Next.js** (App Router)
 - **TypeScript**
 - **Tailwind CSS**
-
+- **Node.JS**
 ---
 
 ## Installation
