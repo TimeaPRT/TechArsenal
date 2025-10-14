@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 
 ## Overview
-This is a simple **Next.js + TypeScript application** demonstrating message exchange using **API routes**.  
+This is a simple **Node.js + Next.js + TypeScript application** demonstrating message exchange using **API routes**.  
 Users can type a message in the input, send it to the server route, and see a response displayed in the frontend.
 
 ---
@@ -20,7 +20,7 @@ Users can type a message in the input, send it to the server route, and see a re
 - **Next.js** (App Router)
 - **TypeScript**
 - **Tailwind CSS**
-- **Node.JS**
+- **Node.js**
 ---
 
 ## Installation
