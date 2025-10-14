@@ -82,27 +82,6 @@ const Footer = ({ onPageChange }) => {
             </li>
             <li style={{ marginBottom: "8px" }}>
               <button
-                onClick={() => handleNavigation("home")}
-                style={{
-                  color: "#FFA500",
-                  textDecoration: "none",
-                  fontSize: "14px",
-                  opacity: 0.8,
-                  transition: "opacity 0.3s ease",
-                  backgroundColor: "transparent",
-                  border: "none",
-                  cursor: "pointer",
-                  padding: "0",
-                  textAlign: "left",
-                }}
-                onMouseEnter={(e) => e.target.style.opacity = "1"}
-                onMouseLeave={(e) => e.target.style.opacity = "0.8"}
-              >
-                All Recipes
-              </button>
-            </li>
-            <li style={{ marginBottom: "8px" }}>
-              <button
                 onClick={() => handleNavigation("about")}
                 style={{
                   color: "#FFA500",
