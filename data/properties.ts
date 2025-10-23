@@ -1,4 +1,28 @@
-export const properties = [
+export interface Property {
+  id: number;
+  title: string;
+  location: string;
+  price: number;
+  type: string;
+  status: string;
+  bedrooms: number;
+  bathrooms: number;
+  size: number;
+  yearBuilt: number;
+  lotSize: string;
+  coordinates: [number, number];
+  description: string;
+  images: string[];
+  amenities: string[];
+  agent: {
+    name: string;
+    title: string;
+    phone: string;
+    email: string;
+  };
+}
+
+export const properties: Property[] = [
   {
     id: 1,
     title: "Luxury Manhattan Penthouse",
@@ -255,6 +279,127 @@ export const properties = [
       title: "Luxury Condo Specialist",
       phone: "(555) 890-1234",
       email: "lisa@premiumhomes.com"
+    }
+  },
+  {
+    id: 9,
+    title: "Aspen Mountain Retreat",
+    location: "Aspen, CO",
+    price: 12000000,
+    type: "House",
+    status: "For Sale",
+    bedrooms: 5,
+    bathrooms: 5,
+    size: 6800,
+    yearBuilt: 2015,
+    lotSize: "2.5 acres",
+    coordinates: [39.1911, -106.8175],
+    description: "Luxury mountain retreat with ski-in/ski-out access and breathtaking mountain views. This custom-built home features a great room with floor-to-ceiling stone fireplace, gourmet kitchen, wine cellar, indoor pool, and spa. Perfect for entertaining with multiple outdoor living spaces and direct access to world-class skiing.",
+    images: [
+      "https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    amenities: [
+      "Ski-in/Ski-out", "Mountain Views", "Indoor Pool", "Wine Cellar",
+      "Stone Fireplace", "Hot Tub", "Game Room", "Garage"
+    ],
+    agent: {
+      name: "Robert Mackenzie",
+      title: "Mountain Properties Specialist",
+      phone: "(555) 901-2345",
+      email: "robert@premiumhomes.com"
+    }
+  },
+  {
+    id: 10,
+    title: "Boston Brownstone",
+    location: "Beacon Hill, Boston, MA",
+    price: 4200000,
+    type: "Townhouse",
+    status: "For Sale",
+    bedrooms: 4,
+    bathrooms: 3,
+    size: 2900,
+    yearBuilt: 1850,
+    lotSize: "20x100",
+    coordinates: [42.3584, -71.0638],
+    description: "Historic Beacon Hill brownstone meticulously restored with modern amenities while preserving original character. Features include original wide-plank floors, period moldings, updated chef's kitchen, and private garden. Located on one of Boston's most charming cobblestone streets near the Public Garden.",
+    images: [
+      "https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    amenities: [
+      "Historic Charm", "Original Floors", "Private Garden", "Updated Kitchen",
+      "Period Details", "Gas Fireplaces", "Central Location", "Park Views"
+    ],
+    agent: {
+      name: "Jennifer Walsh",
+      title: "Historic Properties Expert",
+      phone: "(555) 012-3456",
+      email: "jennifer@premiumhomes.com"
+    }
+  },
+  {
+    id: 11,
+    title: "Malibu Beach House",
+    location: "Malibu, CA",
+    price: 18500000,
+    type: "House",
+    status: "For Sale",
+    bedrooms: 6,
+    bathrooms: 6,
+    size: 5200,
+    yearBuilt: 2021,
+    lotSize: "0.8 acres",
+    coordinates: [34.0259, -118.7798],
+    description: "Spectacular contemporary beach house with direct ocean access and panoramic Pacific Ocean views. Floor-to-ceiling glass walls, infinity pool, outdoor kitchen, and multiple decks create the ultimate California coastal living experience. Smart home features and luxury finishes throughout.",
+    images: [
+      "https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    amenities: [
+      "Ocean Front", "Infinity Pool", "Beach Access", "Outdoor Kitchen",
+      "Smart Home", "Home Theater", "Wine Storage", "Guest Suite"
+    ],
+    agent: {
+      name: "Amanda Foster",
+      title: "Luxury Coastal Specialist",
+      phone: "(555) 123-7890",
+      email: "amanda@premiumhomes.com"
+    }
+  },
+  {
+    id: 12,
+    title: "Nashville Music Row Condo",
+    location: "Music Row, Nashville, TN",
+    price: 1650000,
+    type: "Condo",
+    status: "For Sale",
+    bedrooms: 2,
+    bathrooms: 2,
+    size: 1600,
+    yearBuilt: 2019,
+    lotSize: "N/A",
+    coordinates: [36.1627, -86.7816],
+    description: "Luxury condo in the heart of Music Row with recording studio and entertainment space. Open concept living with high-end finishes, custom built-ins, and private balcony. Building features include rooftop terrace with city views, fitness center, and secure parking.",
+    images: [
+      "https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    amenities: [
+      "Recording Studio", "Rooftop Terrace", "City Views", "Custom Built-ins",
+      "Private Balcony", "Fitness Center", "Secure Parking", "Concierge"
+    ],
+    agent: {
+      name: "Thomas Reed",
+      title: "Entertainment District Specialist",
+      phone: "(555) 234-8901",
+      email: "thomas@premiumhomes.com"
     }
   }
 ];

@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -37,27 +35,32 @@ export default function LoginPage() {
         <form onSubmit={handleLogin} className="flex flex-col gap-4">
           <div className="flex flex-col">
             <label className="mb-1 text-sm font-medium text-gray-600">Email</label>
-            <Input
+            <input
               type="email"
               placeholder="you@example.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
             />
           </div>
           <div className="flex flex-col">
             <label className="mb-1 text-sm font-medium text-gray-600">Password</label>
-            <Input
+            <input
               type="password"
               placeholder="Enter your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
             />
           </div>
-          <Button type="submit" className="mt-2 w-full">
+          <button 
+            type="submit" 
+            className="mt-2 w-full px-4 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          >
             Sign In
-          </Button>
+          </button>
         </form>
 
         <p className="text-sm text-gray-500 mt-4 text-center">

@@ -1,6 +1,5 @@
 import PropertyCard from './PropertyCard';
 import { properties } from '@/data/properties';
-import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export default function FeaturedProperties() {
@@ -26,9 +25,9 @@ export default function FeaturedProperties() {
 
         <div className="text-center">
           <Link href="/listings">
-            <Button size="lg" className="px-8">
+            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg hover:bg-blue-700 transition-colors">
               View All Properties
-            </Button>
+            </button>
           </Link>
         </div>
       </div>

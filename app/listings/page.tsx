@@ -1,21 +1,26 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import PropertyCard from '@/components/PropertyCard';
 import FilterSidebar from '@/components/FilterSidebar';
 import MapView from '@/components/MapView';
 import { properties } from '@/data/properties';
-import { Button } from '@/components/ui/button';
-import { Grid, Map, SlidersHorizontal } from 'lucide-react';
+
+// Define proper types for our filters
+interface Filters {
+  priceRange: [number, number];
+  propertyType: string;
+  location: string;
+  bedrooms: string;
+  bathrooms: string;
+}
 
 export default function ListingsPage() {
   const [filteredProperties, setFilteredProperties] = useState(properties);
   const [viewMode, setViewMode] = useState('grid');
   const [showFilters, setShowFilters] = useState(false);
-  const [filters, setFilters] = useState({
-    priceRange: [0, 10000000],
+  const [filters, setFilters] = useState<Filters>({
+    priceRange: [0, 10000000] as [number, number],
     propertyType: 'all',
     location: 'all',
     bedrooms: 'all',
@@ -55,8 +60,6 @@ export default function ListingsPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
-      
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center justify-between mb-8">
           <div>
@@ -65,30 +68,41 @@ export default function ListingsPage() {
           </div>
           
           <div className="flex items-center gap-4">
-            <Button
-              variant={showFilters ? "default" : "outline"}
+            {/* Filters Button */}
+            <button
               onClick={() => setShowFilters(!showFilters)}
-              className="lg:hidden"
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg border transition duration-200 lg:hidden ${
+                showFilters 
+                  ? 'bg-blue-600 text-white border-blue-600' 
+                  : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'
+              }`}
             >
-              <SlidersHorizontal className="w-4 h-4 mr-2" />
+              <span className="text-sm">⚙️</span>
               Filters
-            </Button>
+            </button>
             
+            {/* View Mode Toggle */}
             <div className="flex bg-white rounded-lg border p-1">
-              <Button
-                variant={viewMode === 'grid' ? 'default' : 'ghost'}
-                size="sm"
+              <button
                 onClick={() => setViewMode('grid')}
+                className={`flex items-center justify-center w-10 h-10 rounded-md transition duration-200 ${
+                  viewMode === 'grid' 
+                    ? 'bg-blue-600 text-white' 
+                    : 'text-gray-600 hover:bg-gray-100'
+                }`}
               >
-                <Grid className="w-4 h-4" />
-              </Button>
-              <Button
-                variant={viewMode === 'map' ? 'default' : 'ghost'}
-                size="sm"
+                <span className="text-sm">◼️</span>
+              </button>
+              <button
                 onClick={() => setViewMode('map')}
+                className={`flex items-center justify-center w-10 h-10 rounded-md transition duration-200 ${
+                  viewMode === 'map' 
+                    ? 'bg-blue-600 text-white' 
+                    : 'text-gray-600 hover:bg-gray-100'
+                }`}
               >
-                <Map className="w-4 h-4" />
-              </Button>
+                <span className="text-sm">🗺️</span>
+              </button>
             </div>
           </div>
         </div>
@@ -110,14 +124,12 @@ export default function ListingsPage() {
               </div>
             ) : (
               <div className="h-[600px] rounded-lg overflow-hidden">
-                <MapView properties={filteredProperties} />
+                <MapView properties={filteredProperties as any} />
               </div>
             )}
           </div>
         </div>
       </div>
-      
-      <Footer />
     </div>
   );
 }

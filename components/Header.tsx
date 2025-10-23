@@ -2,8 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import { usePathname } from 'next/navigation';
 import { Home, Search, Heart, Menu, X, User, Phone } from 'lucide-react';
 import clsx from 'clsx';
@@ -60,23 +58,24 @@ export default function Header() {
             {/* Search Bar */}
             <div className="relative">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
-              <Input
+              <input
+                type="text"
                 placeholder="Search properties..."
-                className="pl-10 w-64 rounded-full focus:ring-2 focus:ring-blue-500"
+                className="pl-10 w-64 rounded-full border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
             </div>
 
             {/* Icons */}
             <Link href="/favorites">
-              <Button variant="ghost" size="sm" className="hover:bg-blue-50 rounded-full">
-                <Heart className="w-4 h-4" />
-              </Button>
+              <button className="p-2 hover:bg-blue-50 rounded-full">
+                <Heart className="w-4 h-4 text-gray-700" />
+              </button>
             </Link>
 
             <Link href="/login">
-              <Button variant="ghost" size="sm" className="hover:bg-blue-50 rounded-full">
-                <User className="w-4 h-4" />
-              </Button>
+              <button className="p-2 hover:bg-blue-50 rounded-full">
+                <User className="w-4 h-4 text-gray-700" />
+              </button>
             </Link>
 
             {/* Contact Info */}
@@ -87,24 +86,19 @@ export default function Header() {
 
             {/* Contact Button */}
             <Link href="/contact">
-              <Button
-                size="sm"
-                className="ml-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full shadow-md"
-              >
+              <button className="ml-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-4 py-2 rounded-full shadow-md text-sm">
                 Contact Us
-              </Button>
+              </button>
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
+          <button
+            className="md:hidden p-2 rounded-full hover:bg-gray-100"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </Button>
+          </button>
         </div>
       </div>
 
@@ -125,15 +119,9 @@ export default function Header() {
         )}
       >
         {/* Logo */}
-        <Link
-          href="/"
-          className="flex items-center gap-2"
-          onClick={() => setIsMenuOpen(false)}
-        >
+        <Link href="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
           <Home className="w-6 h-6 text-blue-600" />
-          <span className="text-lg font-bold text-gray-900 tracking-tight">
-            PremiumHomes
-          </span>
+          <span className="text-lg font-bold text-gray-900 tracking-tight">PremiumHomes</span>
         </Link>
 
         {/* Nav links */}
@@ -156,20 +144,24 @@ export default function Header() {
         {/* Search input */}
         <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
-          <Input placeholder="Search..." className="pl-10 w-full rounded-full" />
+          <input
+            type="text"
+            placeholder="Search..."
+            className="pl-10 w-full rounded-full border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          />
         </div>
 
         {/* Icons */}
         <div className="flex gap-4">
           <Link href="/favorites" onClick={() => setIsMenuOpen(false)}>
-            <Button variant="ghost" size="sm" className="hover:bg-blue-50 rounded-full">
-              <Heart className="w-4 h-4" />
-            </Button>
+            <button className="p-2 hover:bg-blue-50 rounded-full">
+              <Heart className="w-4 h-4 text-gray-700" />
+            </button>
           </Link>
           <Link href="/login" onClick={() => setIsMenuOpen(false)}>
-            <Button variant="ghost" size="sm" className="hover:bg-blue-50 rounded-full">
-              <User className="w-4 h-4" />
-            </Button>
+            <button className="p-2 hover:bg-blue-50 rounded-full">
+              <User className="w-4 h-4 text-gray-700" />
+            </button>
           </Link>
         </div>
 
@@ -180,9 +172,9 @@ export default function Header() {
             <span>(123) 456-7890</span>
           </div>
           <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
-            <Button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full shadow-md">
+            <button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full shadow-md py-2">
               Contact Us
-            </Button>
+            </button>
           </Link>
         </div>
       </div>

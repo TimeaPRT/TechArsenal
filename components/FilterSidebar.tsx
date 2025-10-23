@@ -1,10 +1,6 @@
 'use client';
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Slider } from '@/components/ui/slider';
-import { X } from 'lucide-react';
+import { useState } from 'react';
 
 interface Filters {
   priceRange: [number, number];
@@ -27,8 +23,10 @@ export default function FilterSidebar({
   isVisible,
   onClose
 }: FilterSidebarProps) {
-  const handlePriceChange = (value: [number, number]) => {
-    setFilters({ ...filters, priceRange: value });
+  const handlePriceChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
+    const newPriceRange = [...filters.priceRange] as [number, number];
+    newPriceRange[index] = parseInt(e.target.value);
+    setFilters({ ...filters, priceRange: newPriceRange });
   };
 
   const handleFilterChange = (key: keyof Filters, value: string) => {
@@ -71,129 +69,139 @@ export default function FilterSidebar({
           overflow-y-auto
         `}
       >
-        <Card className="h-full lg:h-auto rounded-none lg:rounded-lg border-0 lg:border">
-          <CardHeader className="flex flex-row items-center justify-between lg:block border-b pb-4">
-            <CardTitle className="text-lg font-semibold">Filters</CardTitle>
-            <Button
-              variant="ghost"
-              size="sm"
+        <div className="h-full lg:h-auto rounded-none lg:rounded-lg border-0 lg:border bg-white">
+          {/* Header */}
+          <div className="flex flex-row items-center justify-between lg:block border-b pb-4 p-6">
+            <h3 className="text-lg font-semibold">Filters</h3>
+            <button
               onClick={onClose}
-              className="lg:hidden"
+              className="lg:hidden p-2 hover:bg-gray-100 rounded-md transition duration-200"
             >
-              <X className="w-4 h-4" />
-            </Button>
-          </CardHeader>
+              {/* Simple X icon using SVG */}
+              <svg 
+                className="w-4 h-4" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M6 18L18 6M6 6l12 12" 
+                />
+              </svg>
+            </button>
+          </div>
 
-          <CardContent className="space-y-6 pt-6">
+          {/* Filter Content */}
+          <div className="space-y-6 pt-6 p-6">
             {/* Price range */}
             <div>
               <label className="text-sm font-medium mb-3 block">Price Range</label>
-              <Slider
-                value={filters.priceRange}
-                onValueChange={handlePriceChange}
-                max={10000000}
-                min={0}
-                step={100000}
-                className="mb-2"
-              />
-              <div className="flex justify-between text-xs text-gray-600">
-                <span>${filters.priceRange[0].toLocaleString()}</span>
-                <span>${filters.priceRange[1].toLocaleString()}</span>
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <div className="flex-1">
+                    <label className="text-xs text-gray-600 mb-1 block">Min Price</label>
+                    <input
+                      type="number"
+                      value={filters.priceRange[0]}
+                      onChange={(e) => handlePriceChange(e, 0)}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <label className="text-xs text-gray-600 mb-1 block">Max Price</label>
+                    <input
+                      type="number"
+                      value={filters.priceRange[1]}
+                      onChange={(e) => handlePriceChange(e, 1)}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-between text-xs text-gray-600">
+                  <span>${filters.priceRange[0].toLocaleString()}</span>
+                  <span>${filters.priceRange[1].toLocaleString()}</span>
+                </div>
               </div>
             </div>
 
             {/* Property Type */}
             <div>
               <label className="text-sm font-medium mb-3 block">Property Type</label>
-              <Select
+              <select
                 value={filters.propertyType}
-                onValueChange={(value) => handleFilterChange('propertyType', value)}
+                onChange={(e) => handleFilterChange('propertyType', e.target.value)}
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
-                <SelectTrigger>
-                  <SelectValue placeholder="All Types" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All Types</SelectItem>
-                  <SelectItem value="House">House</SelectItem>
-                  <SelectItem value="Condo">Condo</SelectItem>
-                  <SelectItem value="Apartment">Apartment</SelectItem>
-                  <SelectItem value="Townhouse">Townhouse</SelectItem>
-                </SelectContent>
-              </Select>
+                <option value="all">All Types</option>
+                <option value="House">House</option>
+                <option value="Condo">Condo</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Townhouse">Townhouse</option>
+              </select>
             </div>
 
             {/* Location */}
             <div>
               <label className="text-sm font-medium mb-3 block">Location</label>
-              <Select
+              <select
                 value={filters.location}
-                onValueChange={(value) => handleFilterChange('location', value)}
+                onChange={(e) => handleFilterChange('location', e.target.value)}
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
-                <SelectTrigger>
-                  <SelectValue placeholder="All Locations" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All Locations</SelectItem>
-                  <SelectItem value="Manhattan">Manhattan</SelectItem>
-                  <SelectItem value="Brooklyn">Brooklyn</SelectItem>
-                  <SelectItem value="Beverly Hills">Beverly Hills</SelectItem>
-                  <SelectItem value="Miami">Miami</SelectItem>
-                  <SelectItem value="San Francisco">San Francisco</SelectItem>
-                </SelectContent>
-              </Select>
+                <option value="all">All Locations</option>
+                <option value="Manhattan">Manhattan</option>
+                <option value="Brooklyn">Brooklyn</option>
+                <option value="Beverly Hills">Beverly Hills</option>
+                <option value="Miami">Miami</option>
+                <option value="San Francisco">San Francisco</option>
+              </select>
             </div>
 
             {/* Bedrooms */}
             <div>
               <label className="text-sm font-medium mb-3 block">Bedrooms</label>
-              <Select
+              <select
                 value={filters.bedrooms}
-                onValueChange={(value) => handleFilterChange('bedrooms', value)}
+                onChange={(e) => handleFilterChange('bedrooms', e.target.value)}
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
-                <SelectTrigger>
-                  <SelectValue placeholder="Any" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">Any</SelectItem>
-                  <SelectItem value="1">1+</SelectItem>
-                  <SelectItem value="2">2+</SelectItem>
-                  <SelectItem value="3">3+</SelectItem>
-                  <SelectItem value="4">4+</SelectItem>
-                  <SelectItem value="5">5+</SelectItem>
-                </SelectContent>
-              </Select>
+                <option value="all">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+                <option value="5">5+</option>
+              </select>
             </div>
 
             {/* Bathrooms */}
             <div>
               <label className="text-sm font-medium mb-3 block">Bathrooms</label>
-              <Select
+              <select
                 value={filters.bathrooms}
-                onValueChange={(value) => handleFilterChange('bathrooms', value)}
+                onChange={(e) => handleFilterChange('bathrooms', e.target.value)}
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
-                <SelectTrigger>
-                  <SelectValue placeholder="Any" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">Any</SelectItem>
-                  <SelectItem value="1">1+</SelectItem>
-                  <SelectItem value="2">2+</SelectItem>
-                  <SelectItem value="3">3+</SelectItem>
-                  <SelectItem value="4">4+</SelectItem>
-                </SelectContent>
-              </Select>
+                <option value="all">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+              </select>
             </div>
 
             {/* Clear button */}
-            <Button
-              variant="outline"
+            <button
               onClick={clearFilters}
-              className="w-full"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
               Clear All Filters
-            </Button>
-          </CardContent>
-        </Card>
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );

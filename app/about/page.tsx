@@ -1,12 +1,9 @@
 'use client';
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white text-gray-800">
-      <Header />
+      {/* REMOVED: <Header /> */}
 
       <main className="overflow-hidden">
         {/* Hero Section */}
@@ -167,7 +164,7 @@ export default function AboutPage() {
         </section>
       </main>
 
-      <Footer />
+      {/* REMOVED: <Footer /> */}
     </div>
   );
 }
