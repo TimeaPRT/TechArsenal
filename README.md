@@ -1,41 +1,46 @@
-# Flutter Calculator App
+# Ì±ã Hi, I'm Timea Prell
 
-A beautiful, modern calculator application built with Flutter and Dart. Features a sleek glass morphism design with dynamic font sizing for handling large numbers and a responsive user interface.
+Ì≤ª **Full-Stack Developer** | Ì≥± **Mobile Developer** | Ìæ® **UI/UX Designer**  
+Ì∫Ä Passionate about building modern, responsive, and accessible web & mobile applications.
 
-## Features
+Ì≥ß **Email:** [prelltimii@gmail.com](mailto:prelltimii@gmail.com)  
+Ì≥± **Phone:** +40 742 451 952  
+Ì¥ó **LinkedIn:** [Renata Timea Prell](https://www.linkedin.com/in/renata-timea-prell-163584321/)  
+Ìºê **GitHub:** [TimeaPRT](https://github.com/TimeaPRT)
 
-- üßÆ **Basic Arithmetic Operations**: Addition, subtraction, multiplication, and division
-- üé® **Modern Glass Morphism UI**: Beautiful transparent design with gradient backgrounds
-- üì± **Responsive Design**: Works seamlessly across different screen sizes
-- üî¢ **Dynamic Font Sizing**: Automatically adjusts display font size for large numbers
-- üåà **Custom Color Scheme**: Unique pastel colors for different operations
-- ‚ö° **Smooth Animations**: Fluid button interactions and state transitions
-- üìä **Large Number Support**: Handles extremely large calculations with scientific notation
+## Ì∑† About Me
+Creative and detail-oriented developer focused on crafting smooth user experiences, efficient backend logic, and clean, maintainable code.  
+I enjoy transforming ideas into elegant digital products using modern web and mobile technologies.
 
-## Tech Stack
+## Ì∫Ä Tech Stack
 
-- **Frontend**: Flutter, Dart
-- **UI Framework**: Material Design
-- **Typography**: Google Fonts (Space Grotesk, Roboto)
-- **State Management**: Flutter StatefulWidget
-- **Platforms**: Android, iOS, Web, Desktop (cross-platform)
+### Ì≥± **Mobile Development**
+- **Flutter & Dart:** Cross-platform mobile development
+- **Android Studio:** Emulator management and native Android development
 
-## Screenshots
+### Ìæ® **Frontend Development**
+- **Languages:** HTML5, JavaScript, TypeScript
+- **Frameworks:** React, Next.js, Vite
+- **Styling:** CSS3, Tailwind CSS, ShadCN UI
 
-*(Add your app screenshots here)*
+### ‚öôÔ∏è **Backend Development**
+- **Node.js & Express.js** ‚Äì RESTful APIs, server-side logic
 
-## Installation
+### Ì∑ÑÔ∏è **Databases**
+- **MongoDB (NoSQL):** CRUD operations, schema design  
+- **Supabase (PostgreSQL):** Realtime data sync, authentication
 
-### Prerequisites
-- Flutter SDK (version 3.9.2 or higher)
-- Dart SDK
-- Android Studio / VS Code with Flutter extension
-- Android Emulator or physical device
+## Ìºü Featured Projects
 
-### Steps
+### Ì≥± [Flutter Calculator App](https://github.com/TimeaPRT/TechArsenal/tree/flutter-calculator-app)
+A modern calculator application built with Flutter featuring glass morphism UI design and dynamic font sizing.
 
-1. **Clone the repository**
-```bash
-git clone https://github.com/TimeaPRT/TechArsenal.git
-cd TechArsenal
-git checkout flutter-calculator-app
+### Ì¥ê [2FA Authentication System](https://github.com/TimeaPRT/TechArsenal/tree/2fa-authentication-system)
+A full-stack authentication system with Two-Factor Authentication and modern React UI.
+
+## Ì≤¨ Let's Connect
+Ì≥ß [prelltimii@gmail.com](mailto:prelltimii@gmail.com)  
+Ì≥± +40 742 451 952  
+ÔøΩÔøΩ [LinkedIn](https://www.linkedin.com/in/renata-timea-prell-163584321/)
+
+‚≠êÔ∏è *Thanks for visiting my profile ‚Äî always open to new collaborations and projects!*
