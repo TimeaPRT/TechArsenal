@@ -1,46 +1,151 @@
-# Ì±ã Hi, I'm Timea Prell
+# üëã Hi, I'm Timea Prell
 
-Ì≤ª **Full-Stack Developer** | Ì≥± **Mobile Developer** | Ìæ® **UI/UX Designer**  
-Ì∫Ä Passionate about building modern, responsive, and accessible web & mobile applications.
+üíª **Full-Stack Developer** | üì± **Mobile Developer** | üé® **UI/UX Designer**  
+üöÄ Passionate about building modern, responsive, and accessible web & mobile applications.
 
-Ì≥ß **Email:** [prelltimii@gmail.com](mailto:prelltimii@gmail.com)  
-Ì≥± **Phone:** +40 742 451 952  
-Ì¥ó **LinkedIn:** [Renata Timea Prell](https://www.linkedin.com/in/renata-timea-prell-163584321/)  
-Ìºê **GitHub:** [TimeaPRT](https://github.com/TimeaPRT)
+üìß **Email:** [prelltimii@gmail.com](mailto:prelltimii@gmail.com)  
+üì± **Phone:** +40 742 451 952  
+üîó **LinkedIn:** [Renata Timea Prell](https://www.linkedin.com/in/renata-timea-prell-163584321/)  
+üåê **GitHub:** [TimeaPRT](https://github.com/TimeaPRT)
 
-## Ì∑† About Me
+---
+
+## üß† About Me
 Creative and detail-oriented developer focused on crafting smooth user experiences, efficient backend logic, and clean, maintainable code.  
 I enjoy transforming ideas into elegant digital products using modern web and mobile technologies.
 
-## Ì∫Ä Tech Stack
+---
 
-### Ì≥± **Mobile Development**
+## üöÄ Tech Stack
+
+### üì± **Mobile Development**
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
+
 - **Flutter & Dart:** Cross-platform mobile development
 - **Android Studio:** Emulator management and native Android development
+- **Features:** Responsive UI, state management, native performance, hot reload
 
-### Ìæ® **Frontend Development**
+### üé® **Frontend Development**
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+
 - **Languages:** HTML5, JavaScript, TypeScript
 - **Frameworks:** React, Next.js, Vite
 - **Styling:** CSS3, Tailwind CSS, ShadCN UI
+- **Best Practices:** Component-based architecture, responsive design, accessibility-first UI
+
+---
 
 ### ‚öôÔ∏è **Backend Development**
-- **Node.js & Express.js** ‚Äì RESTful APIs, server-side logic
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 
-### Ì∑ÑÔ∏è **Databases**
+- **Node.js** & **Express.js** ‚Äì RESTful APIs, server-side logic, authentication & authorization  
+- Secure and scalable backend with clean code practices
+
+---
+
+### üóÑÔ∏è **Databases**
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+
 - **MongoDB (NoSQL):** CRUD operations, schema design  
-- **Supabase (PostgreSQL):** Realtime data sync, authentication
+- **Supabase (PostgreSQL):** Realtime data sync, authentication, hosted backend services
 
-## Ìºü Featured Projects
+---
 
-### Ì≥± [Flutter Calculator App](https://github.com/TimeaPRT/TechArsenal/tree/flutter-calculator-app)
-A modern calculator application built with Flutter featuring glass morphism UI design and dynamic font sizing.
+### üé® **UI / UX Design**
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white)
 
-### Ì¥ê [2FA Authentication System](https://github.com/TimeaPRT/TechArsenal/tree/2fa-authentication-system)
-A full-stack authentication system with Two-Factor Authentication and modern React UI.
+- **Figma:** Wireframing, prototyping, interactive mockups, design systems  
+- **Canva:** Visual assets for marketing and social content  
+- **Focus:** User-centered design, responsiveness, and accessibility
 
-## Ì≤¨ Let's Connect
-Ì≥ß [prelltimii@gmail.com](mailto:prelltimii@gmail.com)  
-Ì≥± +40 742 451 952  
-ÔøΩÔøΩ [LinkedIn](https://www.linkedin.com/in/renata-timea-prell-163584321/)
+---
+
+### üìã **Project Management & Documentation**
+![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
+![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
+![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
+
+- **Jira:** Task tracking & sprint planning  
+- **Notion:** Project documentation & workflow organization  
+- **Slack:** Team communication and workflow integration  
+
+---
+
+### üß© **Version Control**
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+- **Git & GitHub:** Branching, pull requests, code reviews, CI/CD collaboration
+
+---
+
+### üõ†Ô∏è **Development Tools**
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
+![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![Yarn](https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white)
+
+- **VS Code:** Primary code editor with Flutter/Dart extensions
+- **Android Studio:** Emulator setup and native development
+- **Android Emulator:** Mobile app testing and debugging
+- **Vite:** Fast build tool for modern web apps  
+- **npm / yarn:** Package management
+
+---
+
+## üì± Mobile Development Setup
+
+### Flutter Development Environment
+- **Flutter SDK:** Cross-platform mobile development
+- **Dart:** Programming language for Flutter
+- **Android Emulator:** For testing Android applications
+- **VS Code:** With Flutter and Dart extensions
+- **Hot Reload:** Instant code changes during development
+
+### Emulator Management
+- **Android Virtual Devices (AVD):** Multiple device configurations
+- **Hardware Acceleration:** For smooth emulator performance
+- **Device Testing:** Various screen sizes and Android versions
+
+
+---
+
+## üåü My Focus
+- Building **clean, performant, and maintainable** web & mobile applications  
+- Designing **intuitive, responsive** interfaces for all devices
+- Writing **secure, scalable** backend services  
+- Developing **cross-platform mobile apps** with Flutter
+- Collaborating in **agile teams** with effective communication
+
+---
+
+## üí¨ Let's Connect
+<p align="left">
+  <a href="mailto:prelltimii@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://www.linkedin.com/in/renata-timea-prell-163584321/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/TimeaPRT" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</p>
+
+üìß [prelltimii@gmail.com](mailto:prelltimii@gmail.com)  
+üì± +40 742 451 952  
+
+---
 
 ‚≠êÔ∏è *Thanks for visiting my profile ‚Äî always open to new collaborations and projects!*
