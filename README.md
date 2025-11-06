@@ -1,16 +1,41 @@
-# flutter_application_1
+# Flutter Calculator App
 
-A new Flutter project.
+A beautiful, modern calculator application built with Flutter and Dart. Features a sleek glass morphism design with dynamic font sizing for handling large numbers and a responsive user interface.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- 🧮 **Basic Arithmetic Operations**: Addition, subtraction, multiplication, and division
+- 🎨 **Modern Glass Morphism UI**: Beautiful transparent design with gradient backgrounds
+- 📱 **Responsive Design**: Works seamlessly across different screen sizes
+- 🔢 **Dynamic Font Sizing**: Automatically adjusts display font size for large numbers
+- 🌈 **Custom Color Scheme**: Unique pastel colors for different operations
+- ⚡ **Smooth Animations**: Fluid button interactions and state transitions
+- 📊 **Large Number Support**: Handles extremely large calculations with scientific notation
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Frontend**: Flutter, Dart
+- **UI Framework**: Material Design
+- **Typography**: Google Fonts (Space Grotesk, Roboto)
+- **State Management**: Flutter StatefulWidget
+- **Platforms**: Android, iOS, Web, Desktop (cross-platform)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+*(Add your app screenshots here)*
+
+## Installation
+
+### Prerequisites
+- Flutter SDK (version 3.9.2 or higher)
+- Dart SDK
+- Android Studio / VS Code with Flutter extension
+- Android Emulator or physical device
+
+### Steps
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/TimeaPRT/TechArsenal.git
+cd TechArsenal
+git checkout flutter-calculator-app
